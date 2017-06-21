@@ -31,14 +31,14 @@
     <!-- Animated view for editing notes -->
     <na-editor id="editor" note="{{editableNote}}" on-close="commitChange">
     </na-editor>
-    <!--- Handles changes to current note data --->
+    <!-- Handles changes to current note data -->
     <firebase-document
     id="document"
     app-name="notes"
     path="[[editableNoteId]]"
     data="{{editableNote}}">
     </firebase-document>
-    <!--Query firebase Database for currently authed user's notes -->
+    <!-- Query firebase Database for currently authed user's notes -->
     <firebase-query
     id="query"
     app-name="notes"
